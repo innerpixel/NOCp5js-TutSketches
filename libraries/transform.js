@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
     smooth();
-    background(0,0,0);
+    background(0);
     stroke('yellow'); 
     fill(random(255), random(255), random(255)); 
     // var x = random(width); 
