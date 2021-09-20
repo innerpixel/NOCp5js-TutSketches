@@ -3,12 +3,12 @@ var xoff2 = 10000;
 
 function setup() {
     createCanvas(600, 600);
-    background(255);
+    background(0);
 }
 
 function draw() {
     smooth();
-    background(255);
+    background(0);
     stroke('yellow'); 
     fill(random(255), random(255), random(255)); 
     // var x = random(width); 
