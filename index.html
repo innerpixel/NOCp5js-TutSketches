@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P5JS - PROJECTS</title>
-    <script src="./libraries/p5.min.js"></script>
-    
-    
-    </div>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <script src="./libraries/transform.js"></script>
   </head>
+
   <body>
-    <h1 class="accent">00-InnerPixel</h1>
-    <div style="margin-top: 30px; position: relative">
-        <script src="./libraries/transform.js"></script>
+    <div id="app">
+      <div style="display: block">
+        <h1>Here is my sketch:</h1>
+      </div>
+
+      <div id="sketch" style="position: absolute">
+        <!-- Our sketch will go here! -->
+      </div>
+      <p>Pretty cool, eh?</p>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="./libraries/p5.min.js"></script>
+
+    <script>
+      new Vue({
+        el: "#app",
+        vuetify: new Vuetify(),
+      });
+    </script>
   </body>
   <style>
     * {
       padding: 0px;
       margin: 0px;
-      background-color: black;
+
       box-sizing: border-box;
       text-align: center;
     }
-    @font-face {
-      font-family: "LeviBrush";
-      src: local("levibrush"),
-        url(./src/fonts/levibrush/LEVIBRUSH.TTF) format("truetype");
-    }
     h1 {
-      font-size: 90px;
-      padding-top: 40px;
-      width: auto;
-      color: rgba(253, 236, 0, 0.801);
-      background-color: black;
-      letter-spacing: 30px;
-    }
-    .accent {
-      font-family: "LeviBrush", Helvetica, Arial;
-
+      font-size: 2em;
     }
   </style>
 </html>
